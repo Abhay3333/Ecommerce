@@ -1,11 +1,7 @@
 import React,{useState} from 'react'
 import NavBar from '../Components/NavBar/NavBar'
 import axios from 'axios'
-<<<<<<< HEAD
 import {useNavigate,Link}  from 'react-router-dom'
-=======
-import {useNavigate}  from 'react-router-dom'
->>>>>>> bec5c2a8f3b9847e5bbf97b755e884a0f1bdc136
 const SignupPage = () => {
 
   const [name,setName] = useState("")
@@ -55,11 +51,8 @@ const SignupPage = () => {
         <input type="password" id='password' value={password} onChange={(e) => setPassword(e.target.value)} className="block border border-grey-light w-full p-3 rounded mb-4" name="password" placeholder="Password" required/>
         <input type="password" value={confirm_Password} onChange={(e) => setConfirm_Password(e.target.value)} className="block border border-grey-light w-full p-3 rounded mb-4" name="confirm_password" placeholder="Confirm Password" />
         <error id="alert"></error>
-<<<<<<< HEAD
         <button type="submit" className="w-full text-center py-3 rounded   bg-red-700 hover:bg-red-800 text-white  focus:outline-none my-1">Create Account</button>
-=======
         <button type="submit" className="w-full text-center py-3 rounded bg-red-700 hover:bg-red-800 text-white  focus:outline-none my-1">Create Account</button>
->>>>>>> bec5c2a8f3b9847e5bbf97b755e884a0f1bdc136
           <div className="text-center text-sm text-white mt-4">
                         By signing up, you agree to the &nbsp;
                         <Link  className="text-white hover:text-gray-600 font-semibold" to="#">
